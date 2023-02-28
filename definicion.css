@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* SECCION DE INICIO*/
+
+.inicio{
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+    url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+   
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+/* BARRA DE NAVEGACION*/
+.inicio .contenido-seccion .menu{
+max-width: 1000px;
+background-color: #333 ;
+font-size: 20px;
+
+}
+
+.inicio .contenido-seccion .menu .menu-horizontal{
+    list-style: none;
+	display: flex;
+	justify-content: space-between;
+    position: center;
+}
+.inicio .contenido-seccion .menu .menu-horizontal > li > a{
+    display: block;
+	padding: 10px 10px;
+	color: white;
+	text-decoration: none;
+
+}
+.inicio .contenido-seccion .menu .menu-horizontal > li::before{
+    background-color: red;
+    display: block;
+    content: '';
+    width: 0%;
+    height: 5px;
+    top:0;
+    position: relative;
+    transition: width 0.2s;
+}
+.inicio .contenido-seccion .menu .menu-horizontal > li:hover::before{
+    width: 100%;
+
+}
+.inicio .contenido-seccion .menu-mobiles{
+    display : none;
+    color:red;
+    cursor: pointer;
+    
+}
+.inicio .contenido-seccion .menu-mobiles .nav{
+    display: none;
+}
+ul .mostrar{
+    top: 65px;
+}
+/*INFORMACION*/
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color:white
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    color: white;
+    
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: red;
+    box-shadow: 0 0 20px #fff;
+}
+/*FOTO*/
+
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid red;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+
+
+
+/*SECCION INFORMACION PERSONAL*/
+.datosp{
+    
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.datosp .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.datosp .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.datosp  .contenido-seccion .especial{
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.datosp .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+.datosp .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.datosp .contenido-seccion .fila .col{
+    width: 30%;
+}
+.datosp .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.datosp .contenido-seccion .fila .col .listado {
+    text-align: left;
+}
+/*herramientas*/
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+
+.herramientas{
+    padding: 150px 0 150px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("img/fondoHabilidades.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+.herramientas .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.herramientas .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.herramientas .contenido-seccion .lenguajes{
+    margin: 50px;
+    
+    font-size: 30px;
+    
+}
+.herramientas .contenido-seccion .lenguajes h3{
+    display: inline-block;
+}
+.herramientas .contenido-seccion .lenguajes a{
+    display: inline-block
+    ;
+    text-decoration: none;
+    color: red;
+    border: 3px solid red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 20px 10px;
+    transition: .3s;
+    -webkit-backdrop-filter: blur (10px);
+    backdrop-filter: blur(10px);
+    font-size: 40px;
+    align-items: center;
+}
+.herramientas .contenido-seccion .lenguajes a:hover{
+    color: #fff;
+    background-color: red;
+    box-shadow: 0 0 20px #fff;
+}
+
+
+/*SECCION CONTACTO*/
+.contacto{
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+.contacto.contenido-seccion{
+    max-width: 100px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto  .contenido-seccion .especial{
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.contacto .contenedor-contacto p{
+    max-width: 200px;
+    margin: auto;
+    color: #666;
+}
+.contacto .contenedor-contacto .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:854px){
+    
+
+    .inicio .contenido-seccion .menu .menu-horizontal{
+        position: fixed;
+        top: -100vw;
+        text-align: left;
+    }
+    
+    .inicio .contenido-seccion .menu .menu-horizontal li:hover{
+        background: none;
+    }
+
+    .datosp .contenido-seccion .fila{
+        display: block;
+    }
+    .datosp .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+    .herramientas .contenido-seccion .lenguajes a{
+        margin: auto;
+        align-items: inherit;
+        display: block;
+    }
+    .herramientas .contenido-seccion .lenguajes h3{
+        display: block;
+        align-items: inherit;
+    }
+
+    .inicio .contenido-seccion .menu-mobiles{
+        display: block;
+        font-size: 30px;
+        position: fixed;
+    }
+    .inicio .contenido-seccion header nav{
+        position: absolute;
+        background-color: #333;
+        font-size: 30px;
+        line-height: 50px;
+        cursor: pointer;
+        transition: .3s;
+        
+    }
+    .inicio .contenido-seccion header .nav a{
+        display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+    z-index: 99;
+    
+    }
+    .inicio .contenido-seccion header .nav a::before{
+        background-color: red;
+        display: block;
+        content: '';
+        width: 0%;
+        height: 5px;
+        top:0;
+        position: relative;
+        transition: width 0.2s;
+    }
+    .inicio .contenido-seccion header .nav a:hover:before{
+        width: 100%;
+    }
+    }
